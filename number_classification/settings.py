@@ -11,9 +11,9 @@ BASE_DIR = Path(__file__).resolve().parent.parent
 SECRET_KEY = 'django-insecure-748q#_3g1ca*@69lkf#8em%*llaiaa+0^lhs&unul$^-e-n8d7'
 
 # SECURITY WARNING: don't run with debug turned on in production!
-DEBUG = True
+DEBUG = False
 
-ALLOWED_HOSTS = []
+ALLOWED_HOSTS = ['numberclass.pythonanywhere.com', '127.0.0.1']
 
 
 # Application definition
@@ -43,7 +43,7 @@ MIDDLEWARE = [
 
 CORS_ALLOWED_ORIGINS = [   
     "http://127.0.0.1:8000",
-
+    "https://numberclass.pythonanywhere.com",
 ]
 
 ROOT_URLCONF = 'number_classification.urls'
